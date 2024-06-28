@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home page HomePage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-image: url('https://png.pngtree.com/png-clipart/20230817/original/pngtree-vector-illustration-of-skin-cancer-screening-for-melanoma-detection-vector-picture-image_10973136.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgb(242, 244, 244);
+        }
+
+        .navbar {
+            margin-bottom: 0;
+        }
+
+        .page-title {
+            text-align: center;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<h1 class="page-title">Melanoma skin cancer detection</h1>
+
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="{{ url_for('home') }}"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Testing</a></li>
+                <li><a href="{{ url_for('login') }}"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+                <li><a href="{{ url_for('register') }}"><span class="glyphicon glyphicon-align-justify"></span> Registration</a></li>
+                <li><a href="{{ url_for('detection') }}"><span class="glyphicon glyphicon-align-justify"></span> Detection</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</body>
+</html>
